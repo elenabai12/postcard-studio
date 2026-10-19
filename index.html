@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff8ec">
+  <title>Little Postcard Studio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="./"><span class="brand-icon" aria-hidden="true">✳</span> little postcard studio</a>
+    <span class="header-note">small moments. lovely keepsakes.</span>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="title">
+      <p class="eyebrow">A TINY STUDIO FOR YOUR EVERYDAY MEMORIES</p>
+      <h1 id="title">a little note<br class="mobile-break"> from today <span>♡</span></h1>
+      <p>Turn a favorite moment into a little something to keep.</p>
+    </section>
+    <div class="studio">
+      <section class="controls" aria-label="Customize your postcard">
+        <div class="section-heading"><span>LET’S MAKE SOME MAIL</span><span aria-hidden="true"><svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 13 13 3M3 3h10v10" stroke="currentColor" stroke-width="1.5"/></svg></span></div>
+        <div class="control-block">
+          <label class="field-title" for="photo"><span class="step">01</span> Pick a little moment</label>
+          <label class="upload" for="photo"><span class="upload-art" aria-hidden="true">▧ <span>+</span></span><strong id="upload-label">Choose a photo</strong><span>JPG, PNG or WebP · up to 20 MB</span><input id="photo" type="file" accept="image/jpeg,image/png,image/webp"></label>
+          <p class="hint">Your photo stays right here, in your browser.</p>
+        </div>
+        <div class="control-block">
+          <label class="field-title" for="message"><span class="step">02</span> A few words, a lot of feeling</label>
+          <textarea id="message" rows="4" maxlength="140" placeholder="What made today a little lovely?">Somewhere between the sunshine and the slow afternoons, I thought of you. Wish you were here! ♡</textarea>
+          <div class="message-meta"><span>A note to someone. Or your future self.</span><span id="count">0 / 140</span></div>
+        </div>
+        <fieldset class="control-block themes">
+          <legend class="field-title"><span class="step">03</span> Set the mood</legend>
+          <div class="theme-options">
+            <label class="theme strawberry"><input type="radio" name="theme" value="strawberry" checked><span class="swatch"><i></i><b aria-hidden="true">✓</b></span><span>Strawberry</span></label>
+            <label class="theme seaside"><input type="radio" name="theme" value="seaside"><span class="swatch"><i></i><b aria-hidden="true">✓</b></span><span>Seaside</span></label>
+            <label class="theme matcha"><input type="radio" name="theme" value="matcha"><span class="swatch"><i></i><b aria-hidden="true">✓</b></span><span>Matcha</span></label>
+          </div>
+        </fieldset>
+      </section>
+      <section class="preview-area" aria-label="Live postcard preview">
+        <div class="preview-heading"><span><i></i> YOUR LITTLE MASTERPIECE</span><span>made with a little love</span></div>
+        <div class="postcard-wrap"><canvas id="postcard" width="1200" height="800" role="img" aria-label="Postcard preview with a sample sunny landscape and your message"></canvas></div>
+        <div class="preview-caption"><span aria-hidden="true">✧</span> A moment, sealed with a little sunshine. <span aria-hidden="true">✧</span></div>
+        <button class="download" id="download" type="button"><span aria-hidden="true">↓</span> Download your postcard <span aria-hidden="true"><svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 13 13 3M3 3h10v10" stroke="currentColor" stroke-width="1.5"/></svg></span></button>
+        <p class="export-note">PNG · 1200 × 800 px · ready to keep or share</p>
+        <p id="status" class="status" role="status" aria-live="polite"></p>
+      </section>
+    </div>
+    <div class="bottom-note"><span aria-hidden="true">✿</span> No big occasion needed. The little things are the good things.</div>
+  </main>
+  <footer><span>LITTLE POSTCARD STUDIO</span><span>made for the joy of sending something ♡</span><span>EST. TODAY</span></footer>
+</body>
+</html>
