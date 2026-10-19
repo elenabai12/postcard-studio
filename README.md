@@ -19,17 +19,3 @@ by the website. Photos are centered and cropped to fill the frame.
 
 The preview and exported PNG use the same canvas.
 System fonts and emoji can look different between operating systems.
-
-## GitHub Pages
-
-Upload index.html, style.css, script.js and README.md to your repository.
-In Settings → Pages, choose Deploy from a branch, main, and / (root).
-Save and wait for GitHub to deploy.
-
-## Validation
-
-Checked in Chromium: default preview, three themes, message limits,
-photo uploads and errors, responsive layout, and pixel-exact PNG export.
-
-Manual checks remaining: Safari and Firefox, phone-photo orientation,
-mobile download behavior, and the published GitHub Pages website.
